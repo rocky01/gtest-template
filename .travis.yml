@@ -1,0 +1,12 @@
+language: bash
+sudo: required
+services:
+- docker
+
+script:
+- cat /proc/cpuinfo
+- mkdir bin
+- cd bin
+- cmake ..
+- make
+- make test
