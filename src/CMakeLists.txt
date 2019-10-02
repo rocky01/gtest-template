@@ -7,7 +7,7 @@ add_executable(${PROJECT_NAME} ${S_SRCS} ${S_HEADERS})
 
 include_directories(
     "${SRC_DIR}"
-)
+    "${BOOST_INCLUDE_DIR}")
 
 add_test(NAME ${PROJECT_NAME}
          COMMAND ${PROJECT_NAME})
